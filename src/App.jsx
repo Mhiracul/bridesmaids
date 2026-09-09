@@ -159,7 +159,7 @@ function App() {
             </div>
 
             <a
-              href="https://chat.whatsapp.com/C1DlRRD6jEm8zNDlq8CSyW?mode=gi_t"
+              href="https://chat.whatsapp.com/LP8ZIrenG4f1z15DMnT42N?mode=gi_t"
               target="_blank"
               rel="noopener noreferrer"
               className="whatsapp-button"
