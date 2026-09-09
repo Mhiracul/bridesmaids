@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(circle at 15% 15%, #fffaf4 0%, transparent 35%),
+    radial-gradient(circle at 85% 85%, #ead4c8 0%, transparent 35%), #f3e5dc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* CARD */
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  min-height: 650px;
+
+  background: rgba(255, 252, 248, 0.96);
+
+  border: 1px solid rgba(155, 85, 71, 0.15);
+
+  border-radius: 30px;
+
+  box-shadow: 0 35px 90px rgba(75, 43, 35, 0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 55px 42px;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* CONTENT */
+
+.screen {
+  width: 100%;
+  text-align: center;
+
+  animation: appear 0.55s ease;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SEAL */
+
+.seal {
+  width: 68px;
+  height: 68px;
+
+  margin: 0 auto 30px;
+
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+
+  background: #8c4d43;
+
+  color: #f8e9da;
+
+  border: 5px double #d2aa74;
+
+  font-family: "Playfair Display";
+  font-size: 27px;
+}
+
+/* TEXT */
+
+.eyebrow {
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+
+  font-size: 10px;
+
+  color: #a1786a;
+
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 48px;
+
+  line-height: 1.12;
+
+  color: #4d3029;
+
+  margin-bottom: 22px;
+}
+
+h1 em {
+  display: block;
+
+  color: #914f45;
+
+  font-style: italic;
+}
+
+.description {
+  max-width: 360px;
+
+  margin: 0 auto 32px;
+
+  color: #806960;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+.icon {
+  font-size: 54px;
+
+  margin-bottom: 25px;
+}
+
+.big-icon {
+  font-size: 60px;
+
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-family: "Playfair Display";
+
+  font-size: 27px;
+
+  color: #4d3029;
+
+  margin-bottom: 25px;
+}
+
+/* INPUT */
+
+input {
+  width: 100%;
+
+  height: 58px;
+
+  border: 1px solid #dfcbc0;
+
+  border-radius: 15px;
+
+  background: white;
+
+  padding: 0 18px;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  color: #4d3029;
+
+  outline: none;
+
+  margin-bottom: 13px;
+}
+
+input:focus {
+  border-color: #914f45;
+}
+
+/* BUTTON */
+
+button {
+  width: 100%;
+
+  height: 56px;
+
+  border: none;
+
+  border-radius: 15px;
+
+  background: #914f45;
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+
+  background: #7d4139;
+}
+
+button:disabled {
+  opacity: 0.45;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+button span {
+  margin-left: 8px;
+}
+
+/* DIVIDER */
+
+.divider {
+  width: 45px;
+
+  height: 1px;
+
+  background: #d6b5a8;
+
+  margin: 25px auto;
+}
+
+/* CHOICES */
+
+.choices {
+  display: flex;
+
+  gap: 12px;
+}
+
+.choices button {
+  width: 50%;
+}
+
+.yes-button {
+  background: #914f45;
+}
+
+.no-button {
+  background: #eadbd4;
+
+  color: #74554b;
+}
+
+.no-button:hover {
+  background: #dcc7be;
+}
+
+/* BRIDESMAID CARD */
+
+.bridesmaid-card {
+  border: 1px solid #d4b17f;
+
+  padding: 22px 15px;
+
+  margin: 25px auto 15px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  background: #fffaf2;
+}
+
+.bridesmaid-card span {
+  font-size: 9px;
+
+  letter-spacing: 3px;
+
+  color: #a27a67;
+}
+
+.bridesmaid-card strong {
+  font-family: "Playfair Display";
+
+  font-size: 22px;
+
+  color: #8c4d43;
+
+  letter-spacing: 2px;
+}
+
+.bridesmaid-card small {
+  color: #b18a5f;
+
+  letter-spacing: 3px;
+}
+
+.tiny {
+  font-size: 11px;
+
+  color: #9b8177;
+}
+
+/* FLOATING DETAILS */
+
+.floating-star {
+  position: absolute;
+
+  color: #aa7a6a;
+
+  font-size: 30px;
+
+  animation: float 4s infinite ease-in-out;
+
+  z-index: 1;
+}
+
+.star-one {
+  top: 13%;
+
+  left: 15%;
+}
+
+.star-two {
+  top: 25%;
+
+  right: 15%;
+
+  animation-delay: 1s;
+}
+
+.star-three {
+  bottom: 15%;
+
+  left: 20%;
+
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+
+  bottom: 18px;
+
+  font-family: "Playfair Display";
+
+  font-size: 13px;
+
+  color: #80584d;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .page {
+    padding: 15px;
+  }
+
+  .card {
+    min-height: 620px;
+
+    padding: 42px 25px;
+
+    border-radius: 24px;
+  }
+
+  h1 {
+    font-size: 39px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .floating-star {
+    display: none;
+  }
+}
+.photo-wrapper {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid #d4b17f;
+  background: #fffaf2;
+}
+
+.bride-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.whatsapp-button {
+  width: 100%;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background: #914f45;
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.25s ease;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-2px);
+  background: #7d4139;
+}
